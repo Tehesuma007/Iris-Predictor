@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Iris Flower Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Iris Flower Species Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/predict" method="POST">
+    	Sepal length: <input type='text' name="sepal_length"><br>
+        Sepal width: <input type='text' name="sepal_width"><br>
+        Petal length: <input type='text' name="petal_length"><br>
+        Petal width: <input type='text' name="petal_width"><br>
+        Species: {{result}} <br>
+        <input type="submit" value="Predict">
+    </form>
+ </div>
+</body>
+</html>
